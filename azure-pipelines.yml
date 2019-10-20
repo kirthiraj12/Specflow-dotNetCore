@@ -29,7 +29,11 @@ steps:
     configuration: '$(buildConfiguration)'
 
 - script: dotnet test ./src/FHLBC.MTAP.Api.Acceptance.Tests/ --filter "Category=smoke1" --logger trx
+  continueOnError: true
+
 - script: dotnet test ./src/FHLBC.MTAP.Api.Acceptance.Tests/ --filter "Category=smoke2" --logger trx
+  continueOnError: true
+
 
 
 - task: VisualStudioTestPlatformInstaller@1
