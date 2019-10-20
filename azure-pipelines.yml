@@ -28,10 +28,10 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- script: dotnet test ./src/ --filter "Category=smoke1" --logger trx
+- script: dotnet test ./ --filter "Category=smoke1" --logger trx
   continueOnError: true
 
-- script: dotnet test ./src/ --filter "Category=smoke2" --logger trx
+- script: dotnet test ./ --filter "Category=smoke2" --logger trx
   continueOnError: true
 
 
