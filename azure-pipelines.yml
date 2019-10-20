@@ -28,12 +28,8 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- script: dotnet test ./ --filter "Category=smoke1" --logger trx
+- script: dotnet test ./  --logger trx
   continueOnError: true
-
-- script: dotnet test ./ --filter "Category=smoke2" --logger trx
-  continueOnError: true
-
 
 
 - task: VisualStudioTestPlatformInstaller@1
