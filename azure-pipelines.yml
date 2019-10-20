@@ -31,13 +31,11 @@ steps:
 - script: dotnet test ./  --logger trx
   continueOnError: true
 
-
-- task: VisualStudioTestPlatformInstaller@1
+- task: VSTest@2
   inputs:
-        packageFeedSelector: 'nugetOrg'
-        versionSelector: 'latestStable'
-
-- task: PublishTestResults@2
-  inputs:
-        testResultsFormat: 'XUnit'
-        testResultsFiles: '**/TEST-*.xml'
+    testSelector: 'testAssemblies'
+    testAssemblyVer2: |
+      **\*test*.dll
+      !**\*TestAdapter.dll
+      !**\obj\**
+    searchFolder: '$(System.DefaultWorkingDirectory)'
