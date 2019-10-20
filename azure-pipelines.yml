@@ -34,8 +34,8 @@ steps:
     configuration: '$(buildConfiguration)'
 
 
-    - task: VisualStudioTestPlatformInstaller@1
-      inputs:
+- task: VisualStudioTestPlatformInstaller@1
+  inputs:
         packageFeedSelector: 'nugetOrg'
         versionSelector: 'latestStable'
 - task: PublishTestResults@2
