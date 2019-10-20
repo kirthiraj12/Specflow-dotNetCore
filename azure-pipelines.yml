@@ -36,7 +36,8 @@ steps:
   inputs:
         packageFeedSelector: 'nugetOrg'
         versionSelector: 'latestStable'
+
 - task: PublishTestResults@2
   inputs:
-    testResultsFormat: 'JUnit'
-    testResultsFiles: '**/TEST-*.xml'
+        testResultsFormat: 'XUnit'
+        testResultsFiles: '**/TEST-*.xml'
