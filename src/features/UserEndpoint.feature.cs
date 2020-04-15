@@ -80,9 +80,11 @@ namespace TestRepoSpecflow.Src.Features
         [Xunit.FactAttribute(DisplayName="Consumer hits the GET user metadata endpoint and is shown the correct metadata")]
         [Xunit.TraitAttribute("FeatureTitle", "User endpoint tests")]
         [Xunit.TraitAttribute("Description", "Consumer hits the GET user metadata endpoint and is shown the correct metadata")]
+        [Xunit.TraitAttribute("Category", "smoke2")]
         public virtual void ConsumerHitsTheGETUserMetadataEndpointAndIsShownTheCorrectMetadata()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Consumer hits the GET user metadata endpoint and is shown the correct metadata", null, ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Consumer hits the GET user metadata endpoint and is shown the correct metadata", null, new string[] {
+                        "smoke2"});
 #line 11
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();

@@ -4,6 +4,7 @@
 	As a consumer
 	I want to be able to query the Photo Service for information
 
+	@smoke1
 Scenario: Consumer hits the GET photo metadata endpoint and is shown the correct metadata
 
 	Given I am requesting photo metadata 

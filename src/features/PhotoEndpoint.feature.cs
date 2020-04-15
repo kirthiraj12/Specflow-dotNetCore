@@ -80,15 +80,17 @@ namespace TestRepoSpecflow.Src.Features
         [Xunit.FactAttribute(DisplayName="Consumer hits the GET photo metadata endpoint and is shown the correct metadata")]
         [Xunit.TraitAttribute("FeatureTitle", "Photo endpoint tests")]
         [Xunit.TraitAttribute("Description", "Consumer hits the GET photo metadata endpoint and is shown the correct metadata")]
+        [Xunit.TraitAttribute("Category", "smoke1")]
         public virtual void ConsumerHitsTheGETPhotoMetadataEndpointAndIsShownTheCorrectMetadata()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Consumer hits the GET photo metadata endpoint and is shown the correct metadata", null, ((string[])(null)));
-#line 7
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Consumer hits the GET photo metadata endpoint and is shown the correct metadata", null, new string[] {
+                        "smoke1"});
+#line 8
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 9
+#line 10
  testRunner.Given("I am requesting photo metadata", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 11
+#line 12
  testRunner.Then("the response should include \"OK\" as status code", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

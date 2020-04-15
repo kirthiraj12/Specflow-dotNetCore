@@ -7,7 +7,7 @@
 	I want to be able to query the User Service for information
 
 
-
+	@smoke2
 Scenario: Consumer hits the GET user metadata endpoint and is shown the correct metadata
 
 	Given I am requesting user metadata endpoint
